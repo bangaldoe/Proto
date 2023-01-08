@@ -19,6 +19,14 @@
 		CE69093D29683FAF00007231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE69091229683FAF00007231 /* Assets.xcassets */; };
 		CE69094D2968407B00007231 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69094C2968407B00007231 /* DetailView.swift */; };
 		CE69094E2968407B00007231 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69094C2968407B00007231 /* DetailView.swift */; };
+		CE69095129684EA100007231 /* PlantImageWithName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69095029684EA100007231 /* PlantImageWithName.swift */; };
+		CE69095229684EA100007231 /* PlantImageWithName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69095029684EA100007231 /* PlantImageWithName.swift */; };
+		CE690955296AB84900007231 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE690954296AB84900007231 /* Plant.swift */; };
+		CE690956296AB84900007231 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE690954296AB84900007231 /* Plant.swift */; };
+		CE690958296AC6C700007231 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE690957296AC6C700007231 /* User.swift */; };
+		CE690959296AC6C700007231 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE690957296AC6C700007231 /* User.swift */; };
+		CE69095B296AC72000007231 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69095A296AC72000007231 /* HomeHeaderView.swift */; };
+		CE69095C296AC72000007231 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69095A296AC72000007231 /* HomeHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,10 @@
 		CE69093429683FAF00007231 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		CE69093629683FAF00007231 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		CE69094C2968407B00007231 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CE69095029684EA100007231 /* PlantImageWithName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantImageWithName.swift; sourceTree = "<group>"; };
+		CE690954296AB84900007231 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		CE690957296AC6C700007231 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE69095A296AC72000007231 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +112,8 @@
 		CE69090F29683FAE00007231 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CE69094F29684E3F00007231 /* HomeViews */,
 				CE69091029683FAE00007231 /* ProtoApp.swift */,
-				CE69091129683FAE00007231 /* HomeView.swift */,
 				CE69094C2968407B00007231 /* DetailView.swift */,
 				CE69091229683FAF00007231 /* Assets.xcassets */,
 			);
@@ -143,6 +155,26 @@
 				CE69093629683FAF00007231 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		CE69094F29684E3F00007231 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE690953296AB83700007231 /* Models */,
+				CE69091129683FAE00007231 /* HomeView.swift */,
+				CE69095029684EA100007231 /* PlantImageWithName.swift */,
+				CE69095A296AC72000007231 /* HomeHeaderView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		CE690953296AB83700007231 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE690954296AB84900007231 /* Plant.swift */,
+				CE690957296AC6C700007231 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE690955296AB84900007231 /* Plant.swift in Sources */,
+				CE69095129684EA100007231 /* PlantImageWithName.swift in Sources */,
+				CE690958296AC6C700007231 /* User.swift in Sources */,
 				CE69093A29683FAF00007231 /* HomeView.swift in Sources */,
 				CE69094D2968407B00007231 /* DetailView.swift in Sources */,
+				CE69095B296AC72000007231 /* HomeHeaderView.swift in Sources */,
 				CE69093829683FAF00007231 /* ProtoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,8 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE690956296AB84900007231 /* Plant.swift in Sources */,
+				CE69095229684EA100007231 /* PlantImageWithName.swift in Sources */,
+				CE690959296AC6C700007231 /* User.swift in Sources */,
 				CE69093B29683FAF00007231 /* HomeView.swift in Sources */,
 				CE69094E2968407B00007231 /* DetailView.swift in Sources */,
+				CE69095C296AC72000007231 /* HomeHeaderView.swift in Sources */,
 				CE69093929683FAF00007231 /* ProtoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

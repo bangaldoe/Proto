@@ -11,7 +11,7 @@ import SwiftUI
 struct ProtoApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(user: User.sampleData, plants: Plant.sampleData)
         }
     }
 }
